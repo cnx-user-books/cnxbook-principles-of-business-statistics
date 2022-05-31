@@ -1,0 +1,472 @@
+<document xmlns="http://cnx.rice.edu/cnxml" xmlns:m="http://www.w3.org/1998/Math/MathML">
+  <title>Descriptive Statistics: Histogram</title>
+  <metadata xmlns:md="http://cnx.rice.edu/mdml">
+  <md:content-id>m16298</md:content-id>
+  <md:title>Descriptive Statistics: Histogram</md:title>
+  <md:abstract>This module provides an overview of Descriptive Statistics: Histogram as a part of Collaborative Statistics collection (col10522) by Barbara Illowsky and Susan Dean.</md:abstract>
+  <md:uuid>20a79748-b312-4c07-ab87-820c5d8aec6e</md:uuid>
+</metadata>
+
+<content>
+    <para id="element-657">For most of the work you do in this book, you will use a histogram to display the data. One
+advantage of a histogram is that it can readily display large data sets. A rule of thumb is to use
+a histogram when the data set consists of 100 values or more.</para><para id="element-446">A <emphasis>histogram</emphasis> consists of contiguous boxes. It has both a horizontal axis and a vertical axis.
+The horizontal axis is labeled with what the data represents (for instance, distance from your
+home to school). The vertical axis is labeled either <term target-id="freq">Frequency</term> or <term target-id="freq"> relative frequency</term>. The
+graph will have the same shape with either label.  The histogram (like the stemplot) can give you the shape of the
+data, the center, and the spread of the data. (The next section tells you how to calculate the
+center and the spread.)</para><para id="element-123">The relative frequency is equal to the frequency for an observed value of the data divided by the
+total number of data values in the sample. (In the chapter on <link document="m16008">Sampling and Data</link>, we defined frequency as the number
+of times an answer occurs.) If:</para><list id="element-614" list-type="bulleted"><item><m:math><m:mi>f</m:mi></m:math> = frequency</item>
+<item><m:math><m:mi>n</m:mi></m:math> = total number of data values (or the sum of the individual frequencies), and</item>
+<item><m:math><m:mi>RF</m:mi></m:math> = relative frequency,</item></list><para id="element-700">then:</para><equation id="element-1000"><m:math>
+        <m:semantics>
+          <m:mrow>
+            <m:mstyle fontsize="12pt">
+              <m:mrow>
+                <m:mrow>
+                  <m:mstyle fontstyle="italic">
+                    <m:mrow>
+                      <m:mtext>RF</m:mtext>
+                    </m:mrow>
+                  </m:mstyle>
+                  <m:mo stretchy="false">=</m:mo>
+                  <m:mfrac>
+                    <m:mstyle fontsize="8pt">
+                      <m:mrow>
+                        <m:mi>f</m:mi>
+                      </m:mrow>
+                    </m:mstyle>
+                    <m:mstyle fontsize="8pt">
+                      <m:mrow>
+                        <m:mi>n</m:mi>
+                      </m:mrow>
+                    </m:mstyle>
+                  </m:mfrac>
+                </m:mrow>
+              </m:mrow>
+            </m:mstyle>
+            <m:mrow/>
+          </m:mrow>
+          <m:annotation encoding="StarMath 5.0"> size 12{ ital "RF"= {  { size 8{f} }  over  { size 8{n} } } } {}</m:annotation>
+        </m:semantics>
+      </m:math>
+    
+</equation><para id="element-323">For example, if 3 students in Mr. Ahab's English class of 40 students received from 90% to 100%, then,</para><para id="element-407"><m:math>
+        <m:semantics>
+          <m:mrow>
+            <m:mstyle fontsize="12pt">
+              <m:mrow>
+                <m:mrow>
+                  <m:mi>f</m:mi>
+                  <m:mo stretchy="false">=</m:mo>
+                  <m:mn>3</m:mn>
+                </m:mrow>
+              </m:mrow>
+            </m:mstyle>
+            <m:mrow/>
+          </m:mrow>
+          <m:annotation encoding="StarMath 5.0"> size 12{f=3} {}</m:annotation>
+        </m:semantics>
+      </m:math>
+    , 
+      <m:math>
+        <m:semantics>
+          <m:mrow>
+            <m:mstyle fontsize="12pt">
+              <m:mrow>
+                <m:mrow>
+                  <m:mi>n</m:mi>
+                  <m:mo stretchy="false">=</m:mo>
+                  <m:mtext>40</m:mtext>
+                </m:mrow>
+              </m:mrow>
+            </m:mstyle>
+            <m:mrow/>
+          </m:mrow>
+          <m:annotation encoding="StarMath 5.0"> size 12{n="40"} {}</m:annotation>
+        </m:semantics>
+      </m:math>
+    , and 
+      <m:math>
+        <m:semantics>
+          <m:mrow>
+            <m:mstyle fontsize="12pt">
+              <m:mrow>
+                <m:mrow>
+                  <m:mrow>
+                    <m:mrow>
+                      <m:mrow>
+                        <m:mstyle fontstyle="italic">
+                          <m:mrow>
+                            <m:mtext>RF</m:mtext>
+                          </m:mrow>
+                        </m:mstyle>
+                        <m:mo stretchy="false">=</m:mo>
+                        <m:mfrac>
+                          <m:mstyle fontsize="8pt">
+                            <m:mrow>
+                              <m:mi>f</m:mi>
+                            </m:mrow>
+                          </m:mstyle>
+                          <m:mstyle fontsize="8pt">
+                            <m:mrow>
+                              <m:mi>n</m:mi>
+                            </m:mrow>
+                          </m:mstyle>
+                        </m:mfrac>
+                      </m:mrow>
+                      <m:mo stretchy="false">=</m:mo>
+                      <m:mfrac>
+                        <m:mstyle fontsize="8pt">
+                          <m:mrow>
+                            <m:mn>3</m:mn>
+                          </m:mrow>
+                        </m:mstyle>
+                        <m:mstyle fontsize="8pt">
+                          <m:mrow>
+                            <m:mtext>40</m:mtext>
+                          </m:mrow>
+                        </m:mstyle>
+                      </m:mfrac>
+                    </m:mrow>
+                    <m:mo stretchy="false">=</m:mo>
+                    <m:mn>0</m:mn>
+                  </m:mrow>
+                  <m:mtext>.</m:mtext>
+                  <m:mtext>075</m:mtext>
+                </m:mrow>
+              </m:mrow>
+            </m:mstyle>
+            <m:mrow/>
+          </m:mrow>
+          <m:annotation encoding="StarMath 5.0"> size 12{ ital "RF"= {  { size 8{f} }  over  { size 8{n} } } = {  { size 8{3} }  over  { size 8{"40"} } } =0 "." "075"} {}</m:annotation>
+        </m:semantics>
+      </m:math>
+    </para><para id="delete_me">Seven and a half percent of the students received 90% to 100%. Ninety percent to 100 % are quantitative measures.</para><para id="element-237">To construct a histogram, first decide how many <emphasis>bars</emphasis> or <emphasis>intervals</emphasis>, also called classes, represent the data. Many histograms consist of from 5 to 15 bars or classes for clarity. Choose a starting point for the first interval to be
+less than the smallest data value. A <emphasis>convenient starting point</emphasis> is a lower value carried out to one more decimal place than the value with the most decimal places. For example, if the value
+with the most decimal places is 6.1 and this is the smallest value, a convenient starting point is 6.05 (6.1 - 0.05 = 6.05). We say that 6.05 has
+more precision. If the value with the most decimal places is 2.23 and the lowest value is 1.5, a convenient starting point is
+1.495 (1.5 - 0.005 = 1.495). If the value with the most decimal places is 3.234 and the lowest value is 1.0, a convenient starting point is 0.9995 (1.0 - .0005 = 0.9995). If all the data happen to be integers and the smallest value is 2, then a convenient starting point is 1.5 (2 - 0.5 = 1.5).  Also, when the starting point and other boundaries are carried to one additional decimal place, no data value will fall on a boundary.</para>
+<example id="exampid1"><para id="element-743">The following data are the heights (in inches to the nearest half inch) of 100 male
+semiprofessional soccer players. The heights are <emphasis>continuous</emphasis> data since height is measured.
+</para>
+<para id="element-44444"><list id="set-844" list-type="labeled-item" display="inline"><item>60</item>
+  <item>60.5</item>
+  <item>61</item>
+  <item>61</item>
+  <item>61.5</item></list>
+</para>
+
+
+
+<para id="element-449">
+<list id="set-911" list-type="labeled-item" display="inline"><item>63.5</item>
+  <item>63.5</item>
+  <item>63.5</item></list>
+</para>
+
+<para id="element-448">
+<list id="set-222" list-type="labeled-item" display="inline"><item>64</item>
+  <item>64</item>
+  <item>64</item>
+  <item>64</item>
+  <item>64</item>
+  <item>64</item>
+  <item>64</item>
+  <item>64.5</item>
+  <item>64.5</item>
+  <item>64.5</item>
+  <item>64.5</item>
+  <item>64.5</item>
+  <item>64.5</item>
+  <item>64.5</item>
+  <item>64.5</item></list>
+
+</para>
+
+<para id="element-447">
+<list id="set-91" list-type="labeled-item" display="inline"><item>66</item>
+  <item>66</item>
+  <item>66</item>
+  <item>66</item>
+  <item>66</item>
+  <item>66</item>
+  <item>66</item>
+  <item>66</item>
+  <item>66</item>
+  <item>66</item>
+  <item>66.5</item>
+  <item>66.5</item>
+  <item>66.5</item>
+
+  <item>66.5</item>
+  <item>66.5</item>
+  <item>66.5</item>
+  <item>66.5</item>
+  <item>66.5</item>
+  <item>66.5</item>
+  <item>66.5</item>
+  <item>66.5</item>
+  <item>67</item>
+  <item>67</item>
+
+
+  <item>67</item>
+  <item>67</item>
+  <item>67</item>
+  <item>67</item>
+  <item>67</item>
+  <item>67</item>
+  <item>67</item>
+  <item>67</item>
+  <item>67</item>
+  <item>67</item>
+  <item>67.5</item>
+  <item>67.5</item>
+  <item>67.5</item>
+  <item>67.5</item>
+  <item>67.5</item>
+  <item>67.5</item>
+  <item>67.5</item></list>
+</para>
+
+<para id="element-556">
+<list id="set-110" list-type="labeled-item" display="inline"><item>68</item>
+  <item>68</item>
+  <item>69</item>
+  <item>69</item>
+  <item>69</item>
+  <item>69</item>
+  <item>69</item>
+  <item>69</item>
+  <item>69</item>
+  <item>69</item>
+  <item>69</item>
+  <item>69</item>
+  <item>69.5</item>
+  <item>69.5</item>
+  <item>69.5</item>
+  <item>69.5</item>
+  <item>69.5</item></list>
+</para>
+
+<para id="element-445">
+<list id="set-912" list-type="labeled-item" display="inline"><item>70</item>
+  <item>70</item>
+  <item>70</item>
+  <item>70</item>
+  <item>70</item>
+  <item>70</item>
+  <item>70.5</item>
+  <item>70.5</item>
+  <item>70.5</item>
+  <item>71</item>
+  <item>71</item>
+  <item>71</item></list>
+</para>
+
+<para id="element-443">
+<list id="set-76" list-type="labeled-item" display="inline"><item>72</item>
+  <item>72</item>
+  <item>72</item>
+  <item>72.5</item>
+  <item>72.5</item>
+  <item>73</item>
+  <item>73.5</item></list>
+</para>
+
+<para id="element-442">
+<list id="set-783" list-type="labeled-item" display="inline"><item>74</item></list>
+
+</para>
+
+<para id="element-364">The smallest data value is 60.  Since the data with the most decimal places has one decimal (for instance, 61.5), we want our starting point to have two decimal places. Since the numbers 0.5, 0.05, 0.005, etc. are convenient numbers, use 0.05 and subtract it from 60, the smallest value, for the convenient starting point.</para>
+
+<para id="element-906">60 - 0.05  =  59.95  which is more precise than, say, 61.5 by one decimal place.  The starting point is, then, 59.95.  </para>
+
+<para id="element-291">The largest value is 74.  74+ 0.05 = 74.05 is the ending value. </para>
+
+<para id="element-236">Next, calculate the width of each bar or class interval.  To calculate this width, subtract the starting point from the ending value and divide by the number of bars (you must choose the number of bars you desire).  Suppose you choose 8 bars.</para>
+
+<equation id="element-2133"><m:math>
+<m:apply>
+  <m:eq/>
+  <m:apply>
+    <m:divide/>
+    <m:apply>
+      <m:minus/>
+      <m:cn>74.05</m:cn>
+      <m:cn>59.95</m:cn>
+    </m:apply>
+    <m:cn>8</m:cn>
+  </m:apply>
+  <m:cn>1.76</m:cn>
+</m:apply>
+
+</m:math>
+</equation>
+
+<note id="id7476385">We will round up to 2 and make each bar or class interval 2 units wide. Rounding up to 2  is one way to prevent a value from falling on a boundary.  Rounding to the next number is necessary even if it goes against the standard rules of rounding. For this example, using 1.76 as the width would also work.</note><para id="element-209">The boundaries are:</para><list id="element-790" list-type="bulleted"><item>59.95</item>
+<item>59.95 + 2 = 61.95</item>
+<item>61.95 + 2 = 63.95</item>
+<item>63.95 + 2 = 65.95</item>
+<item>65.95 + 2 = 67.95</item>
+<item>67.95 + 2 = 69.95</item>
+<item>69.95 + 2 = 71.95</item>
+<item>71.95 + 2 = 73.95</item>
+<item>73.95 + 2 = 75.95</item></list>
+
+<para id="element-159">The heights 60 through 61.5 inches are in the interval 59.95 - 61.95.  The heights that are 63.5 are in the interval 61.95 - 63.95.  The heights that are 64 through 64.5 are in the interval 63.95 - 65.95.  The heights 66 through 67.5 are in the interval 65.95 - 67.95.  The heights 68 through 69.5 are in the interval 67.95 - 69.95.  The heights 70 through 71 are in the interval 69.95 - 71.95.  The heights 72 through 73.5 are in the interval 71.95 - 73.95.  The height 74 is in the interval 73.95 - 75.95.  </para>
+
+<para id="element-451">The following histogram displays the heights on the x-axis and relative frequency on the y-axis.</para>
+
+<media id="id7474144" alt="Histogram consists of 8 bars with the y-axis in increments of 0.05 from 0-0.4 and the x-axis in intervals of 2 from 59.95-75.95." display="block"><image src="../../media/Ch2_hist_1.png" mime-type="image/png" print-width="5in"/></media>
+
+</example><example id="exampid2"><para id="element-972">
+The following data are the number of books bought by 50 part-time college students at ABC College.  The number of books is discrete data since books are counted. 
+</para>
+<para id="element-225">
+<list id="set-105" list-type="labeled-item" display="inline"><item>1</item>
+  <item>1</item>
+  <item>1</item>
+  <item>1</item>
+  <item>1</item>
+  <item>1</item>
+  <item>1</item>
+  <item>1</item>
+  <item>1</item>
+  <item>1</item>
+  <item>1</item></list>
+</para>
+
+<para id="element-224">
+<list id="set-280" list-type="labeled-item" display="inline"><item>2</item>
+  <item>2</item>
+  <item>2</item>
+  <item>2</item>
+  <item>2</item>
+  <item>2</item>
+  <item>2</item>
+  <item>2</item>
+  <item>2</item>
+  <item>2</item></list>
+</para>
+<para id="element-223">
+<list id="set-119" list-type="labeled-item" display="inline"><item>3</item>
+  <item>3</item>
+  <item>3</item>
+  <item>3</item>
+  <item>3</item>
+  <item>3</item>
+  <item>3</item>
+  <item>3</item>
+  <item>3</item>
+  <item>3</item>
+  <item>3</item>
+  <item>3</item>
+  <item>3</item>
+  <item>3</item>
+  <item>3</item>
+  <item>3</item></list>
+</para>
+<para id="element-222">
+<list id="set-855" list-type="labeled-item" display="inline"><item>4</item>
+  <item>4</item>
+  <item>4</item>
+  <item>4</item>
+  <item>4</item>
+  <item>4</item></list>
+</para>
+
+<para id="element-221">
+<list id="set-194" list-type="labeled-item" display="inline"><item>5</item>
+  <item>5</item>
+  <item>5</item>
+  <item>5</item>
+  <item>5</item></list>
+</para>
+
+<para id="element-220">
+<list id="set-835" list-type="labeled-item" display="inline"><item>6</item>
+  <item>6</item></list>
+</para>
+
+<para id="element-760">Eleven students buy 1 book.  Ten students buy 2 books.  Sixteen students buy 3 books.  Six students buy 4 books.  Five students buy 5 books.   Two students buy 6 books.</para>
+
+<para id="element-728">Because the data are integers, subtract 0.5 from 1, the smallest data value and add 0.5 to 6, the largest data value.  Then the starting point is 0.5 and the ending value is 6.5. </para>
+
+<exercise id="element-545">
+<problem id="id8093949">
+ <para id="element-818">Next, calculate the width of each bar or class interval.  If the data are discrete and there are not too many different values, a width that places the data values in the middle of the bar or class interval is the most convenient.  Since the data consist of the numbers 1, 2, 3, 4, 5, 6 and the starting point is 0.5, a width of one places the 1 in the middle of the interval from 0.5 to 1.5, the 2 in the middle of the interval from 1.5 to 2.5, the 3 in the middle of the interval from 2.5 to 3.5, the 4 in the middle of the interval from _______ to _______, the 5 in the middle of the interval from _______ to _______, and the _______ in the middle of the interval from _______ to _______ .</para></problem>
+<solution id="id12377723" print-placement="end">
+<list id="element-23523" list-type="bulleted"><item>3.5 to 4.5</item>
+<item>4.5 to 5.5</item>
+<item>6</item>
+<item>5.5 to 6.5</item>
+</list>
+
+</solution>
+</exercise>
+
+<para id="element-20">Calculate the number of bars as follows: </para>
+
+<equation id="element-48"><m:math>
+<m:apply>
+  <m:eq/>
+  <m:apply>
+    <m:divide/>
+    <m:apply>
+      <m:minus/>
+      <m:cn>6.5</m:cn>
+      <m:cn>0.5</m:cn>
+    </m:apply>
+    <m:ci>bars</m:ci>
+  </m:apply>
+  <m:cn>1</m:cn>
+</m:apply>
+</m:math></equation>
+
+<para id="element-600">where 1 is the width of a bar. Therefore, <m:math><m:mi>bars</m:mi><m:mo>=</m:mo><m:mi>6</m:mi></m:math>.</para>
+
+<para id="element-756">The following histogram displays the number of books on the x-axis and the frequency on the y-axis.</para> 
+
+<media id="id5693638" alt="Histogram consists of 6 bars with the y-axis in increments of 2 from 0-16 and the x-axis in intervals of 1 from 0.5-6.5." display="block"><image src="../../media/Ch2_books_1.png" mime-type="image/png" print-width="4in"/></media></example>
+<para id="eip-168"><title>Using the TI-83, 83+, 84, 84+ Calculator Instructions</title>Go to the Appendix (14:Appendix) in the menu on the left.  There are calculator instructions for entering data and for creating a customized histogram.  Create the histogram for Example 2.
+<list id="eip-id1170740042913"><item>Press Y=.  Press CLEAR to clear out any equations.</item>
+<item>Press STAT 1:EDIT.  If L1 has data in it, arrow up into the name L1, press CLEAR and arrow down.  If necessary, do the same for L2.</item>
+<item>Into L1, enter 1, 2, 3, 4, 5, 6</item>
+<item>Into L2, enter 11, 10, 16, 6, 5, 2</item>
+<item>Press WINDOW. Make Xmin = .5, Xmax = 6.5, Xscl = (6.5 - .5)/6, Ymin = -1, Ymax = 20, Yscl = 1, Xres = 1</item>
+<item>Press 2nd Y=. Start by pressing 4:Plotsoff ENTER.</item>
+<item>Press 2nd Y=. Press 1:Plot1. Press ENTER. Arrow down to TYPE. Arrow to the 3rd picture (histogram). Press ENTER.</item>
+<item>Arrow down to Xlist: Enter L1 (2nd 1).  Arrow down to Freq.  Enter L2 (2nd 2).</item>
+<item>Press GRAPH</item>
+<item>Use the TRACE key and the arrow keys to examine the histogram.</item>
+</list></para><section id="element-325"><title> Optional Collaborative Exercise</title>
+<para id="element-326">Count the money (bills and change) in your pocket or purse.  Your instructor will record the amounts.  As a class, construct a histogram displaying the data.  Discuss how many intervals you think is appropriate.  You may want to experiment with the number of intervals.  Discuss, also, the shape of the histogram.
+</para><para id="element-212">Record the data, in dollars (for example, 1.25 dollars).</para><para id="element-277">Construct a histogram.</para>   </section>
+  </content>
+<glossary>
+
+
+ <definition id="freq">
+    <term>Frequency</term>
+    <meaning id="id19849552">
+   The number of times a value of the data occurs.
+    </meaning>
+  </definition>
+
+
+
+<definition id="relfreq">
+    <term>Relative Frequency</term>
+    <meaning id="id5747717">
+The ratio of the number of times a value of the data occurs in the set of all outcomes to the number of all outcomes.
+    </meaning>
+  </definition>
+
+
+</glossary>
+  
+</document>

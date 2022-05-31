@@ -1,0 +1,436 @@
+<document xmlns="http://cnx.rice.edu/cnxml" xmlns:m="http://www.w3.org/1998/Math/MathML">
+  <title>Confidence Intervals: Confidence Interval, Single Population Mean, Standard Deviation Unknown, Student's-t</title>
+  <metadata xmlns:md="http://cnx.rice.edu/mdml">
+  <md:content-id>m16959</md:content-id>
+  <md:title>Confidence Intervals: Confidence Interval, Single Population Mean, Standard Deviation Unknown, Student's-t</md:title>
+  <md:abstract>Confidence Interval, Single Population Mean, Population Standard Deviation Unknown, Student-t is part of the collection col10555 written by Barbara Illowsky and Susan Dean with contributions from Roberta Bloom.</md:abstract>
+  <md:uuid>3d82b359-b659-4923-8f38-53d50c0337c6</md:uuid>
+</metadata>
+
+<content>
+    <para id="delete_me">In practice, we rarely know the population <term target-id="stddev">standard deviation</term>. In the past, when the
+sample size was large, this did not present a problem to statisticians. They used the
+sample standard deviation <m:math><m:mi>s</m:mi></m:math> as an estimate for <m:math><m:mi>σ</m:mi></m:math> and proceeded as before to calculate a
+<term target-id="coninter">confidence interval</term> with close enough results. However, statisticians ran into problems
+when the sample size was small. A small sample size caused inaccuracies in the
+confidence interval. </para><para id="element-643">William S. Gossett (1876-1937) of the Guinness brewery in Dublin, Ireland ran
+into this  problem. His experiments with hops and barley produced very few
+samples. Just replacing <m:math><m:mi>σ</m:mi></m:math> with <m:math><m:mi>s</m:mi></m:math> did not produce accurate results when he tried to
+calculate a confidence interval. He realized that he could not use a normal distribution
+for the calculation; he found that the actual distribution depends on the sample size. This problem led him to "discover" what is called the <term target-id="studenttdist">Student's-t
+distribution</term>. The name comes from the fact that Gosset wrote under the pen name
+"Student."</para><para id="eip-254">Up until the mid 1970s, some statisticians used the <term target-id="normdist">normal distribution</term> approximation for large
+sample sizes and only used the Student's-t distribution for sample sizes of at most 30.
+With the common use of graphing calculators and computers, the practice is to use the
+Student's-t distribution whenever <m:math><m:mi>s</m:mi></m:math> is used as an estimate for <m:math><m:mi>σ</m:mi></m:math>.</para><para id="eip-449">If you draw a simple random sample of size <m:math><m:mi>n</m:mi></m:math> from a population that has
+approximately a normal distribution with mean <m:math><m:mi>μ</m:mi></m:math> and unknown population
+standard deviation <m:math><m:mi>σ</m:mi></m:math> and calculate the t-score
+<m:math>
+<m:mn>t</m:mn>
+<m:mo>=</m:mo>
+<m:mfrac>
+<m:mrow>
+<m:apply>
+<m:conjugate/>
+<m:mn>x</m:mn>
+</m:apply>
+<m:mo>-</m:mo>
+<m:mi>μ</m:mi>
+</m:mrow>
+<m:mrow>
+<m:mo>(</m:mo>
+<m:mfrac>
+<m:mrow>
+<m:mi>s</m:mi>
+</m:mrow>
+<m:mrow>
+<m:msqrt>
+<m:mi>n</m:mi>
+</m:msqrt>
+</m:mrow>
+</m:mfrac>
+<m:mo>)</m:mo>
+</m:mrow>
+</m:mfrac>
+</m:math>
+, then the t-scores follow a <emphasis>Student's-t distribution with <m:math><m:mi>n</m:mi><m:mo>-</m:mo><m:mn>1</m:mn></m:math> degrees of freedom</emphasis>. The t-score has
+the same interpretation as the <term resource="zscore">z-score</term>. It measures how far <m:math><m:apply><m:conjugate/><m:ci>x</m:ci></m:apply></m:math> is from its mean <m:math><m:mi>μ</m:mi></m:math>. For each sample size <m:math><m:mi>n</m:mi></m:math>, there is a different Student's-t distribution.</para><para id="eip-490">The <term target-id="degrefree">degrees of freedom</term>, <emphasis><m:math><m:mi>n</m:mi><m:mo>-</m:mo><m:mn>1</m:mn></m:math></emphasis>, come from the calculation of the sample standard deviation <emphasis><m:math><m:mi>s</m:mi></m:math></emphasis>. In Chapter 2, we used <m:math><m:mi>n</m:mi></m:math> deviations <emphasis><m:math><m:mo>(</m:mo><m:mi>x</m:mi><m:mo>-</m:mo><m:apply><m:conjugate/><m:mi>x</m:mi></m:apply><m:mspace width="5pt"/><m:mtext>values</m:mtext><m:mo>)</m:mo></m:math></emphasis> 
+ to calculate <emphasis><m:math><m:mi>s</m:mi></m:math></emphasis>. Because the
+sum of the deviations is 0, we can find the last deviation once we know the
+other <emphasis><m:math><m:mi>n</m:mi><m:mo>-</m:mo><m:mn>1</m:mn></m:math></emphasis> deviations. The other <emphasis><m:math><m:mi>n</m:mi><m:mo>-</m:mo><m:mn>1</m:mn></m:math></emphasis> deviations can change or vary freely.
+<emphasis>We call the number <m:math><m:mi>n</m:mi><m:mo>-</m:mo><m:mn>1</m:mn></m:math> the degrees of freedom (df).</emphasis></para><list id="eip-418"><title>Properties of the Student's-t Distribution</title><item>The graph for the Student's-t distribution is similar to the Standard Normal curve.</item>
+<item>The mean for the Student's-t distribution is 0 and the distribution is symmetric about 0.</item>
+	<item>The Student's-t distribution has more probability in its tails than the Standard Normal distribution 
+because the spread of the t distribution is greater than the spread of the Standard Normal. So the graph of the Student's-t distribution will be thicker in the tails and shorter in the center than the graph of the Standard Normal distribution.</item>
+	<item> The exact shape of the Student's-t distribution depends on the "degrees of freedom". As the degrees of freedom increases, the graph Student's-t distribution becomes more like the graph of the Standard Normal distribution.</item>
+<item>The underlying population of individual observations is assumed to be normally distributed with unknown population
+mean <emphasis><m:math><m:mi>μ</m:mi></m:math></emphasis> and unknown population standard deviation <emphasis><m:math><m:mi>σ</m:mi></m:math></emphasis>. The size of the underlying population is generally not relevant unless it is very small. If it is bell shaped (normal) then the assumption is met and doesn't need discussion. Random sampling is assumed but it is a completely separate assumption from normality.</item>
+
+
+</list><para id="eip-231">Calculators and computers can easily calculate any Student's-t probabilities. The TI-83,83+,84+ have a tcdf function to find the probability for given values of t. The grammar for the tcdf command is tcdf(lower bound, upper bound, degrees of freedom).  However for confidence intervals, we need to use <emphasis>inverse </emphasis> probability to find the value of t when we know the probability.
+</para><para id="eip-980">For the TI-84+ you can use the invT command on the DISTRibution menu.
+The invT command works similarly to the invnorm.
+The invT command requires two inputs: <emphasis> invT(area to the left, degrees of freedom)</emphasis> The output is the t-score that corresponds to the area we specified.
+<newline/><newline/>
+The TI-83 and 83+ do not have the invT command. (The TI-89 has an inverse T command.)</para><para id="eip-647">A probability table for the Student's-t distribution can also be used.  The table gives t-scores that correspond to the confidence level (column) and degrees of freedom (row). (The TI-86 does not have an invT program or command, so if you are using that calculator, you need to use a probability table for the Student's-t distribution.) When using  t-table, note that some tables are formatted to show the confidence level in the column headings, while the column headings in some tables may show only corresponding area in one or both tails.
+<newline/><newline/>
+A Student's-t table (See the Table of Contents <emphasis>15. Tables</emphasis>) gives t-scores
+given the degrees of freedom and the right-tailed probability. The table is very limited.
+<emphasis>Calculators and computers can easily calculate any Student's-t probabilities.</emphasis></para><list id="eip-752"><title>The notation for the Student's-t distribution is (using T as the random variable) is</title><item><m:math><m:mi>T</m:mi></m:math> ~ <m:math><m:msub><m:mi>t</m:mi><m:mtext>df</m:mtext></m:msub></m:math> where <m:math><m:mtext>df</m:mtext><m:mo>=</m:mo><m:mi>n</m:mi><m:mo>-</m:mo><m:mn>1</m:mn></m:math>.</item>
+<item>For example, if we have a sample of size  n=20 items, then we calculate the degrees of freedom as df=n−1=20−1=19 and we write the distribution as <m:math><m:mi>T</m:mi></m:math> ~ <m:math><m:msub><m:mi>t</m:mi><m:mtext>19</m:mtext></m:msub></m:math> </item>
+</list><para id="eip-737"><emphasis>If the population standard deviation is  not known</emphasis>,  the <term target-id="ebpbound">error bound for a population mean</term> is:
+
+</para><list id="eip-168"><item><m:math>
+<m:mi>EBM</m:mi>
+<m:mo>=</m:mo>
+<m:msub>
+<m:mi>t</m:mi>
+<m:mrow>
+<m:mfrac>
+<m:mi>α</m:mi>
+<m:mn>2</m:mn>
+</m:mfrac>
+</m:mrow>
+</m:msub>
+<m:mo>⋅</m:mo>
+<m:mo>(</m:mo>
+<m:mfrac>
+<m:mi>s</m:mi>
+<m:mrow>
+<m:msqrt>
+<m:mi>n</m:mi>
+</m:msqrt>
+</m:mrow>
+</m:mfrac>
+<m:mo>)</m:mo>
+<m:mspace width="20pt"/>
+</m:math></item>
+<item><m:math>
+<m:msub>
+<m:mi>t</m:mi>
+<m:mfrac>
+<m:mrow>
+<m:mi>α</m:mi>
+</m:mrow>
+<m:mrow>
+<m:mn>2</m:mn>
+</m:mrow>
+</m:mfrac>
+</m:msub>
+</m:math>
+is the t-score with area to the right equal to<m:math>
+<m:mfrac>
+<m:mrow>
+<m:mi>α</m:mi>
+</m:mrow>
+<m:mrow>
+<m:mn>2</m:mn>
+</m:mrow>
+</m:mfrac>
+</m:math></item>
+<item>use <m:math><m:mtext>df</m:mtext><m:mo>=</m:mo><m:mi>n</m:mi><m:mo>-</m:mo><m:mn>1</m:mn></m:math> degrees of freedom</item>
+<item><m:math>
+<m:mi>s</m:mi>
+</m:math>
+= sample standard deviation</item></list><para id="eip-819"><emphasis>The format for the confidence interval is:</emphasis></para><para id="eip-310"><m:math><m:mo>(</m:mo><m:apply>
+	<m:conjugate/>
+        <m:mi>x</m:mi>
+	</m:apply>
+        <m:mo>-</m:mo><m:mi>EBM</m:mi><m:mo>,</m:mo>
+        <m:apply>
+	<m:conjugate/>
+        <m:mi>x</m:mi>
+	</m:apply>
+<m:mo>+</m:mo><m:mi>EBM</m:mi><m:mo>)</m:mo></m:math>.</para><para id="eip-881">The TI-83, 83+ and 84 calculators have a function that calculates the confidence interval directly.  To get to it,
+<newline/>
+Press <code>STAT</code>
+<newline/>
+Arrow over to <code>TESTS</code>.
+<newline/>
+Arrow down to <code>8:TInterval</code> and press <code>ENTER</code> (or just press <code>8</code>).</para><example id="eip-51"><exercise id="element-632"><problem id="id1171101195216">
+		<para id="element-866">Suppose you do a study of acupuncture to determine how
+effective it is in relieving pain. You measure sensory rates for 15 subjects with
+the results given below. Use the sample data to construct a 95% confidence
+interval for the mean sensory rate for the population (assumed normal) from
+which you took the data.
+<newline/><newline/>
+The solution is shown step-by-step and by using the TI-83, 83+ and 84+ calculators.</para><div id="id1171109556457"><list id="set-328" list-type="labeled-item" display="inline"><item>8.6</item>
+			<item>9.4</item>
+			<item>7.9</item>
+			<item>6.8</item>
+			<item>8.3</item>
+			<item>7.3</item>
+			<item>9.2</item>
+			<item>9.6</item>
+			<item>8.7</item>
+			<item>11.4</item>
+			<item>10.3</item>
+			<item>5.4</item>
+			<item>8.1</item>
+			<item>5.5</item>
+			<item>6.9</item></list></div>
+	</problem>
+	<solution id="id1171108330127">
+
+<list id="eip-id1169415158393">
+<item>You can use technology to directly calculate the confidence interval.</item>
+<item>The first solution is step-by-step (Solution A).</item>
+<item>The second solution uses the Ti-83+ and Ti-84 calculators (Solution B).</item>
+</list>
+
+		<para id="element-835"><title>Solution A</title>To find the confidence interval, you need the sample mean, <m:math><m:apply><m:conjugate/><m:mi>x</m:mi></m:apply></m:math>, and the EBM.</para><para id="element-809"><m:math>
+				<m:apply>
+					<m:conjugate/>
+					<m:mi>x</m:mi>
+				</m:apply>
+				<m:mo>=</m:mo>
+				<m:mn>8.2267</m:mn>
+				<m:mspace width="20pt"/>
+				<m:mi>s</m:mi>
+				<m:mo>=</m:mo>
+				<m:mn>1.6722</m:mn>
+				<m:mspace width="20pt"/>
+				<m:mi>n</m:mi>
+				<m:mo>=</m:mo>
+				<m:mn>15</m:mn>
+			</m:math></para><para id="element-152"><m:math><m:mtext>df</m:mtext><m:mo>=</m:mo><m:mn>15</m:mn><m:mo>-</m:mo><m:mn>1</m:mn><m:mo>=</m:mo><m:mn>14</m:mn></m:math></para><para id="element-899"><m:math>
+				<m:mtext>CL</m:mtext>
+				<m:mo>=</m:mo>
+				<m:mn>0.95</m:mn>
+				<m:mspace width="5pt"/>
+			</m:math>
+so
+<m:math>
+				<m:mspace width="5pt"/>
+				<m:mi>α</m:mi>
+				<m:mo>=</m:mo>
+				<m:mn>1</m:mn>
+				<m:mo>-</m:mo>
+				<m:mtext>CL</m:mtext>
+				<m:mo>=</m:mo>
+				<m:mn>1</m:mn>
+				<m:mo>-</m:mo>
+				<m:mn>0.95</m:mn>
+				<m:mo>=</m:mo>
+				<m:mn>0.05</m:mn>
+			</m:math></para><para id="element-471"><m:math>
+				<m:mfrac>
+					<m:mrow>
+						<m:mi>α</m:mi>
+					</m:mrow>
+					<m:mrow>
+						<m:mn>2</m:mn>
+					</m:mrow>
+				</m:mfrac>
+				<m:mo>=</m:mo>
+				<m:mn>0.025</m:mn>
+				<m:mspace width="20pt"/>
+				<m:msub>
+					<m:mi>t</m:mi>
+					<m:mfrac>
+						<m:mrow>
+							<m:mi>α</m:mi>
+						</m:mrow>
+						<m:mrow>
+							<m:mn>2</m:mn>
+						</m:mrow>
+					</m:mfrac>
+				</m:msub>
+				<m:mo>=</m:mo>
+				<m:msub>
+					<m:mi>t</m:mi>
+					<m:mn>.025</m:mn>
+				</m:msub>					</m:math></para><para id="element-331">The area to the right of <m:math>
+<m:msub><m:mi>t</m:mi><m:mn>.025</m:mn></m:msub>
+</m:math> is 0.025 and the area to the left of <m:math>
+<m:msub><m:mi>t</m:mi><m:mn>.025</m:mn></m:msub>
+</m:math> is 1−0.025=0.975
+</para><para id="element-995"><m:math>
+				<m:msub>
+					<m:mi>t</m:mi>
+					<m:mfrac>
+						<m:mrow>
+							<m:mi>α</m:mi>
+						</m:mrow>
+						<m:mrow>
+							<m:mn>2</m:mn>
+						</m:mrow>
+					</m:mfrac>
+				</m:msub>
+				<m:mo>=</m:mo>
+				<m:msub>
+					<m:mi>t</m:mi>
+					<m:mn>.025</m:mn>
+				</m:msub>
+				<m:mo>=</m:mo>
+				<m:mn>2.14</m:mn>
+			</m:math> using invT(.975,14) on the TI-84+ calculator.
+</para><para id="element-46"><m:math>
+				<m:mi>EBM</m:mi>
+				<m:mo>=</m:mo>
+				<m:msub>
+					<m:mi>t</m:mi>
+					<m:mrow>
+						<m:mfrac>
+							<m:mi>α</m:mi>
+							<m:mn>2</m:mn>
+						</m:mfrac>
+					</m:mrow>
+				</m:msub>
+				<m:mo>⋅</m:mo>
+				<m:mo>(</m:mo>
+				<m:mfrac>
+					<m:mi>s</m:mi>
+					<m:mrow>
+						<m:msqrt>
+							<m:mi>n</m:mi>
+						</m:msqrt>
+					</m:mrow>
+				</m:mfrac>
+				<m:mo>)</m:mo>
+			</m:math></para><para id="element-522"><m:math>
+				<m:mi>EBM</m:mi>
+				<m:mo>=</m:mo>
+				<m:mn>2.14</m:mn>
+				<m:mo>⋅</m:mo>
+				<m:mo>(</m:mo>
+				<m:mfrac>
+					<m:mi>1.6722</m:mi>
+					<m:mrow>
+						<m:msqrt>
+							<m:mi>15</m:mi>
+						</m:msqrt>
+					</m:mrow>
+				</m:mfrac>
+				<m:mo>)</m:mo>
+				<m:mo>=</m:mo>
+				<m:mn>0.924</m:mn>
+			</m:math></para><para id="element-218"><m:math>
+				<m:apply>
+					<m:conjugate/>
+					<m:mi>x</m:mi>
+				</m:apply>
+				<m:mo>-</m:mo>
+				<m:mtext>EBM</m:mtext>
+				<m:mo>=</m:mo>
+				<m:mn>8.2267</m:mn>
+				<m:mo>-</m:mo>
+				<m:mn>0.9240</m:mn>
+				<m:mo>=</m:mo>
+				<m:mn>7.3</m:mn>
+			</m:math></para><para id="element-947"><m:math>
+				<m:apply>
+					<m:conjugate/>
+					<m:mi>x</m:mi>
+				</m:apply>
+				<m:mo>+</m:mo>
+				<m:mtext>EBM</m:mtext>
+				<m:mo>=</m:mo>
+				<m:mn>8.2267</m:mn>
+				<m:mo>+</m:mo>
+				<m:mn>0.9240</m:mn>
+				<m:mo>=</m:mo>
+				<m:mn>9.15</m:mn>
+			</m:math></para><para id="element-430">The 95% confidence interval is <emphasis>(7.30, 9.15)</emphasis>.</para><para id="element-273">We estimate with 95% confidence  that the true population mean sensory rate is
+between 7.30 and 9.15.</para></solution>
+</exercise><para id="eip-855"><title>Solution B</title><emphasis>Using a function of the TI-83, TI-83+ or TI-84 calculators:</emphasis>
+<newline/><newline/>
+
+Press <code>STAT</code> and arrow over to <code>TESTS</code>.
+<newline/>
+Arrow down to <code>8:TInterval</code> and press <code>ENTER</code> (or you can just press <code>8</code>).
+Arrow to <code>Data</code> and press <code>ENTER</code>. 
+<newline/>
+Arrow down to <code>List</code> and enter the list name where you put the data.
+<newline/>
+Arrow down to <code>Freq</code> and enter 1.
+<newline/>
+Arrow down to <code>C-level</code> and enter .95
+<newline/>
+Arrow down to <code>Calculate</code> and press <code>ENTER</code>.
+<newline/>
+The 95% confidence interval is (7.3006, 9.1527)
+
+
+</para><note id="eip-406">When calculating the error bound, a probability table for the Student's-t distribution can also be used to find the value of t.  The table gives t-scores that correspond to the confidence level (column) and degrees of freedom (row); the t-score is found where the row and column intersect in the table. </note><para id="eip-899">**With contributions from Roberta Bloom</para>
+</example>   
+  </content>
+
+
+
+  <glossary>
+
+  <definition id="coninter">
+    <term>Confidence Interval (CI)</term>
+    <meaning id="id20495395">
+  An interval estimate for an unknown population parameter. This depends on: 
+<list id="confint1" list-type="bulleted">
+<item>The desired confidence level.</item> <item>Information that is known about the  distribution (for example, known standard deviation).</item><item>The sample and its size.</item></list>
+    </meaning>
+  </definition>
+
+
+<definition id="conflevel">
+    <term>Confidence Level (CL)</term>
+    <meaning id="id17288738">
+The percent expression for the probability that the confidence interval contains the true population parameter. For example, if the <m:math><m:mi>CL</m:mi><m:mo>=</m:mo><m:mn>90%</m:mn></m:math>, then in <m:math><m:mn>90</m:mn></m:math> out of <m:math><m:mn>100</m:mn></m:math> samples the interval estimate will enclose the true population parameter.
+    </meaning>
+  </definition>
+
+
+ <definition id="degrefree">
+    <term>Degrees of Freedom (df)</term>
+    <meaning id="id17799455">
+The number of objects in a sample that are free to vary.
+    </meaning>
+  </definition>
+
+
+  <definition id="ebmbound">
+    <term>Error Bound for a Population Mean (EBM)</term>
+    <meaning id="id16568632">
+      The margin of error. Depends on the confidence level, sample size, and known or estimated population standard deviation.
+    </meaning>
+  </definition>
+
+
+
+<definition id="normdist">
+    <term>Normal Distribution</term>
+    <meaning id="id42733014">
+   A continuous random variable (RV) with pdf  
+<m:math><m:semantics><m:mrow><m:mstyle fontsize="12pt"><m:mrow><m:mrow><m:mrow><m:mstyle fontstyle="italic"><m:mrow><m:mtext>f(x)</m:mtext></m:mrow></m:mstyle><m:mo stretchy="false">=</m:mo><m:mfrac><m:mn>1</m:mn><m:mrow><m:mi>σ</m:mi><m:msqrt><m:mn>2π</m:mn></m:msqrt></m:mrow></m:mfrac></m:mrow><m:msup><m:mi>e</m:mi><m:mstyle fontsize="8pt"><m:mrow><m:mrow><m:mrow><m:mo stretchy="false">−</m:mo><m:mo stretchy="false">(</m:mo></m:mrow><m:mrow><m:mi>x</m:mi><m:mo stretchy="false">−</m:mo><m:mi>μ</m:mi></m:mrow><m:mrow><m:msup><m:mo stretchy="false">)</m:mo><m:mstyle fontsize="6pt"><m:mrow><m:mn>2</m:mn></m:mrow></m:mstyle></m:msup><m:mo stretchy="false">/</m:mo><m:msup><m:mn>2σ</m:mn><m:mstyle fontsize="6pt"><m:mrow><m:mn>2</m:mn></m:mrow></m:mstyle></m:msup></m:mrow></m:mrow></m:mrow></m:mstyle></m:msup></m:mrow></m:mrow></m:mstyle><m:mrow/></m:mrow><m:annotation encoding="StarMath 5.0"> size 12{ ital "pdf"= {  {1}  over  {σ sqrt {2π} } } e rSup { size 8{ -  \( x - μ \)  rSup { size 6{2} } /2σ rSup { size 6{2} } } } } {}</m:annotation></m:semantics></m:math>, where <m:math><m:mi>μ</m:mi></m:math>  is the mean of the distribution and <m:math><m:mi>σ</m:mi></m:math>  is the standard deviation. Notation: <m:math><m:mi>X</m:mi></m:math>  ~  <m:math> <m:mi>N</m:mi>
+  <m:mfenced>
+    <m:mi>μ</m:mi>
+    <m:msup>
+      <m:mi>σ</m:mi>
+      <m:mn/>
+    </m:msup>
+  </m:mfenced></m:math>. If <m:math><m:mi>μ</m:mi><m:mo>=</m:mo><m:mn>0</m:mn></m:math> and <m:math><m:mi>σ</m:mi><m:mo>=</m:mo><m:mn>1</m:mn></m:math>, the RV is called <emphasis>the standard normal distribution</emphasis>.
+    </meaning>
+  </definition>
+
+
+
+
+<definition id="stddev">
+    <term>Standard Deviation</term>
+    <meaning id="id20302532">
+A number that is equal to the square root of the variance and measures how far data values are from their mean. Notation: s for sample standard deviation and   <m:math><m:ci>σ</m:ci></m:math> for population standard deviation.
+    </meaning>
+  </definition>
+
+
+<definition id="studenttdist">
+    <term>Student's-<emphasis>t</emphasis> Distribution</term>
+    <meaning id="id8759760">
+Investigated and reported by William S. Gossett in 1908 and published under the pseudonym Student. The major characteristics of the random variable (RV) are: 
+
+<list id="tdist1" list-type="bulleted"><item>It is continuous and assumes any real values. </item><item>The pdf is symmetrical about its mean of zero. However, it is more spread out and flatter at the apex than the normal distribution. </item><item>  It approaches the standard normal distribution as n gets larger. </item><item>  There is a "family" of t distributions: every representative of the family is completely defined by the number of degrees of freedom which is one less than the number of data.</item></list>
+
+    </meaning>
+  </definition>
+
+
+</glossary>
+</document>

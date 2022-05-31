@@ -1,0 +1,73 @@
+<document xmlns="http://cnx.rice.edu/cnxml" xmlns:m="http://www.w3.org/1998/Math/MathML">
+  <title>Hypothesis Testing of Single Mean and Single Proportion: Decision and Conclusion</title>
+  <metadata xmlns:md="http://cnx.rice.edu/mdml">
+  <md:content-id>m16992</md:content-id>
+  <md:title>Hypothesis Testing of Single Mean and Single Proportion: Decision and Conclusion</md:title>
+  <md:abstract/>
+  <md:uuid>2fbd18df-e23b-4f90-916c-43da508365fe</md:uuid>
+</metadata>
+
+<content>
+    <para id="delete_me">A systematic way to make a decision of whether to reject or not reject the <term target-id="hypothesis">null hypothesis</term>
+is to compare the <term target-id="pvalue">p-value</term> and a <emphasis>preset or preconceived 
+
+<term target-id="signtest">
+<m:math><m:mi>α</m:mi></m:math>
+</term>
+    
+(also called a "significance level")</emphasis>.
+A preset <m:math><m:mi>α</m:mi></m:math> is the probability of a <term target-id="type1err">Type I error</term> (rejecting the null hypothesis when
+the null hypothesis is true). It may or may not be given to you at the beginning of the
+problem.</para><para id="element-259">When you make a <emphasis>decision</emphasis> to reject or not reject <m:math><m:msub><m:mi>H</m:mi><m:mi>o</m:mi></m:msub></m:math>, do as follows:
+<list id="list-1" list-type="bulleted"><item>If <m:math><m:mi>α</m:mi><m:mo>&gt;</m:mo><m:mtext>p-value</m:mtext></m:math>, reject <m:math><m:msub><m:mi>H</m:mi><m:mi>o</m:mi></m:msub></m:math>. The results of the sample data are significant. There is
+sufficient evidence to conclude that <m:math><m:msub><m:mi>H</m:mi><m:mi>o</m:mi></m:msub></m:math> is an incorrect belief and that the <emphasis>alternative
+hypothesis</emphasis>, <m:math><m:msub><m:mi>H</m:mi><m:mi>a</m:mi></m:msub></m:math>, may be correct.</item>
+<item>If <m:math><m:mi>α</m:mi><m:mo>≤</m:mo><m:mtext>p-value</m:mtext></m:math>, do not reject <m:math><m:msub><m:mi>H</m:mi><m:mi>o</m:mi></m:msub></m:math>. The results of the sample data are not significant.
+There is not sufficient evidence to conclude that the alternative hypothesis, <m:math><m:msub><m:mi>H</m:mi><m:mi>a</m:mi></m:msub></m:math>, may
+be correct.</item>
+<item>When you "do not reject <m:math><m:msub><m:mi>H</m:mi><m:mi>o</m:mi></m:msub></m:math>", it does not mean that you should believe that <m:math><m:msub><m:mi>H</m:mi><m:mi>o</m:mi></m:msub></m:math> is true. It
+simply means that the sample data have <emphasis>failed</emphasis> to provide sufficient evidence to cast serious
+doubt about the truthfulness of <m:math><m:msub><m:mi>H</m:mi><m:mi>o</m:mi></m:msub></m:math>.</item>
+
+</list></para><para id="element-734"><emphasis>Conclusion:</emphasis> After you make your decision, write a thoughtful <emphasis>conclusion</emphasis> about the
+hypotheses in terms of the given problem.</para>   
+  </content>
+  
+<glossary>
+
+ <definition id="hypothesis">
+    <term>Hypothesis</term>
+    <meaning id="id1168218799446">
+   A statement about the value of a population parameter. In case of two hypotheses, the statement assumed to be true is called the null hypothesis (notation 
+<m:math><m:semantics><m:mrow><m:mstyle fontsize="12pt"><m:mrow><m:msub><m:mi>H</m:mi><m:mstyle fontsize="8pt"><m:mrow><m:mn>0</m:mn></m:mrow></m:mstyle></m:msub></m:mrow></m:mstyle><m:mrow/></m:mrow><m:annotation encoding="StarMath 5.0"> size 12{H rSub { size 8{0} } } {}</m:annotation></m:semantics></m:math>) and the contradictory statement is called the alternate hypothesis (notation 
+<m:math><m:semantics><m:mrow><m:mstyle fontsize="12pt"><m:mrow><m:msub><m:mi>H</m:mi><m:mstyle fontsize="8pt"><m:mrow><m:mi>a</m:mi></m:mrow></m:mstyle></m:msub></m:mrow></m:mstyle><m:mrow/></m:mrow><m:annotation encoding="StarMath 5.0"> size 12{H rSub { size 8{a} } } {}</m:annotation></m:semantics></m:math>).
+    </meaning>
+  </definition>
+
+
+<definition id="signtest">
+    <term>Level of Significance of the Test </term>
+    <meaning id="id18705874">
+   Probability of a Type I error (reject the null hypothesis when it is true).  Notation: <m:math><m:mi>α</m:mi></m:math>.  In hypothesis testing, the Level of Significance is called the preconceived <m:math><m:mi>α</m:mi></m:math> or the preset <m:math><m:mi>α</m:mi></m:math>.
+    </meaning>
+  </definition>
+
+
+<definition id="pvalue">
+    <term>p-value</term>
+    <meaning id="id9446562">
+The probability that an event will happen purely by chance assuming the null hypothesis is true. The smaller the p-value, the stronger the evidence is against the null hypothesis.
+    </meaning>
+  </definition>
+
+
+<definition id="type1err">
+    <term>Type 1 Error</term>
+    <meaning id="id2292288">
+The decision is to reject the Null hypothesis when, in fact, the Null hypothesis is true.
+    </meaning>
+  </definition>
+
+
+</glossary>
+</document>

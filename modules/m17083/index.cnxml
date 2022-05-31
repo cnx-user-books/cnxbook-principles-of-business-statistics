@@ -1,0 +1,55 @@
+<document xmlns="http://cnx.rice.edu/cnxml" xmlns:m="http://www.w3.org/1998/Math/MathML" xmlns:md="http://cnx.rice.edu/mdml">
+  <title>Linear Regression and Correlation: Slope and Y-Intercept of a Linear Equation</title>
+  <metadata><md:content-id>undefined</md:content-id><md:title/><md:uuid>32ca739a-ccda-41f8-893b-05340fba8ea5</md:uuid>
+</metadata>
+  <content>
+    <para id="delete_me">For the linear equation 
+<m:math>
+<m:mi>y</m:mi>
+<m:mo>=</m:mo>
+<m:mi>a</m:mi>
+<m:mo>+</m:mo>
+<m:mi>bx</m:mi>
+</m:math>, <m:math><m:mi>b</m:mi></m:math> = slope and <m:math><m:mi>a</m:mi></m:math> = y-intercept.</para><para id="element-748">From algebra recall that the slope is a number that describes the steepness of a line and
+the y-intercept is the y coordinate of the point <m:math><m:mo>(</m:mo><m:mn>0</m:mn><m:mo>,</m:mo><m:mi>a</m:mi><m:mo>)</m:mo></m:math> where the line crosses the y-axis.</para><para id="element-659"><figure id="linrgs_slope1"><subfigure id="idm6640880">
+ <media id="idm17230560" alt="A straight line with a slope up and to the right."><image src="../../media/linrgs_slope1pos.png" mime-type="image/png" print-width="1.5in"/></media>
+ <caption>
+  If <m:math><m:mi>b</m:mi><m:mo> &gt; </m:mo><m:mn>0</m:mn></m:math>, the line slopes upward to the right.
+ </caption>
+</subfigure>
+<subfigure id="idm7325264">
+ <media id="idm3425136" alt="A flat line from left to right with no slope."><image src="../../media/linrgs_slope1const.png" mime-type="image/png" print-width="1.5in"/></media>
+ <caption>
+  If <m:math><m:mi>b</m:mi><m:mo> = </m:mo><m:mn>0</m:mn></m:math>, the line is horizontal.
+ </caption>
+</subfigure>
+<subfigure id="idm3889728">
+ <media id="idm7567472" alt="A straight line with a slope down and to the right."><image src="../../media/linrgs_slope1neg.png" mime-type="image/png" print-width="1.5in"/></media>
+ <caption>
+  If <m:math><m:mi>b</m:mi><m:mo> &lt; </m:mo><m:mn>0</m:mn></m:math>, the line slopes downward to the right.
+ </caption>
+</subfigure><caption>Three possible graphs of <m:math>
+<m:mi>y</m:mi>
+<m:mo>=</m:mo>
+<m:mi>a</m:mi>
+<m:mo>+</m:mo>
+<m:mi>bx</m:mi>
+</m:math>.</caption></figure></para><example id="element-201"><para id="element-693">Svetlana tutors to make extra money for college. For each tutoring
+session, she charges a one time fee of $25 plus $15 per hour of tutoring.
+A linear equation that expresses the total amount of money Svetlana earns for each session
+she tutors is <m:math><m:mi>y</m:mi><m:mo>=</m:mo><m:mn>25</m:mn><m:mo>+</m:mo><m:mtext>15x</m:mtext></m:math>. </para>
+
+<exercise id="element-00112">
+<problem id="idm16557968">
+<para id="element-71">What are the independent and dependent variables?  
+What is the y-intercept and what is the slope? Interpret them using complete sentences.</para>
+</problem>
+<solution id="idm16778016">
+<para id="element-88">The independent variable (x) is the number of hours Svetlana tutors each session.  The dependent variable (y) is the amount, in dollars, Svetlana earns for each session.
+</para><para id="element-9">The y-intercept is 25 (a = 25).  At the start of the tutoring session, Svetlana charges a one-time fee of $25 (this is when x = 0).
+The slope is 15 (b = 15).  For each session, Svetlana earns $15 for each hour she tutors.</para>
+</solution>
+</exercise></example>   
+  </content>
+  
+</document>

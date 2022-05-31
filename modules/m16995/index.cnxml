@@ -1,0 +1,68 @@
+<document xmlns="http://cnx.rice.edu/cnxml" xmlns:m="http://www.w3.org/1998/Math/MathML">
+  <title>Hypothesis Testing of Single Mean and Single Proportion: Using the Sample to Test the Null Hypothesis</title>
+  <metadata xmlns:md="http://cnx.rice.edu/mdml">
+  <md:content-id>m16995</md:content-id>
+  <md:title>Hypothesis Testing of Single Mean and Single Proportion: Using the Sample to Test the Null Hypothesis</md:title>
+  <md:abstract/>
+  <md:uuid>39879b24-daf3-400e-bede-f6ec0405c7aa</md:uuid>
+</metadata>
+
+<content>
+    <para id="delete_me">Use the sample data to calculate the actual probability of getting the test result, called the <term target-id="pvalue">p-value</term>. The p-value is the <emphasis>probability that, if the null hypothesis is true, the results from another randomly selected sample will be as extreme or more extreme as the results obtained from the given sample.</emphasis>
+
+</para><para id="element-188">A large p-value calculated from the data indicates that we should fail to reject the <term target-id="hypothesis">null hypothesis</term>. The smaller the p-value, the more unlikely the outcome, and the stronger the evidence is against the null hypothesis. We would reject the null hypothesis if the evidence is strongly against it. </para><para id="element-986"><emphasis>Draw a graph that shows the p-value. The hypothesis test is easier to perform
+if you use a graph because you see the problem more clearly.</emphasis></para><example id="element-804"><title>(to illustrate the p-value)</title><para id="element-842">Suppose a baker claims that his bread height
+is more than 15 cm, on the average. Several of his customers do not believe him. To
+persuade his customers that he is right, the baker decides to do a hypothesis test. He
+bakes 10 loaves of bread. The mean height of the sample loaves is 17 cm. The baker
+knows from baking hundreds of loaves of bread that the <term target-id="stddev">standard deviation</term> for the height
+is 0.5 cm. and the distribution of heights is normal. </para><para id="element-369">The null hypothesis could be <m:math><m:msub><m:mi>H</m:mi><m:mi>o</m:mi></m:msub></m:math>: <m:math><m:mi>μ</m:mi><m:mo>≤</m:mo><m:mn>15</m:mn></m:math> The alternate hypothesis is <m:math><m:msub><m:mi>H</m:mi><m:mi>a</m:mi></m:msub></m:math>: <m:math><m:mi>μ</m:mi><m:mo>&gt;</m:mo><m:mn>15</m:mn></m:math></para><para id="element-850">The words <emphasis>"is more than"</emphasis> translates as a "<m:math><m:mo>&gt;</m:mo></m:math>" so "<m:math><m:mi>μ</m:mi><m:mo>&gt;</m:mo><m:mn>15</m:mn></m:math>" goes into the alternate
+hypothesis. The null hypothesis must contradict the alternate hypothesis.</para><para id="element-863">Since <emphasis><m:math><m:mi>σ</m:mi></m:math> is known</emphasis> (<m:math><m:mi>σ</m:mi><m:mo>=</m:mo><m:mn>0.5</m:mn></m:math> cm.), the distribution for the population is known to be normal with mean
+<m:math><m:mi>μ</m:mi></m:math><m:math><m:mo>=</m:mo><m:mn>15</m:mn></m:math> and standard deviation
+<emphasis><m:math><m:mfrac><m:mrow><m:mi>σ</m:mi></m:mrow><m:mrow><m:msqrt><m:mi>n</m:mi></m:msqrt></m:mrow></m:mfrac></m:math></emphasis> <m:math><m:mo>=</m:mo><m:mfrac><m:mrow><m:mn>0.5</m:mn></m:mrow><m:mrow><m:msqrt><m:mn>10</m:mn></m:msqrt></m:mrow></m:mfrac><m:mo>=</m:mo><m:mn>0.16</m:mn></m:math>.
+
+</para><para id="element-910">Suppose the null hypothesis is true (the mean height of the loaves is no more than 15
+cm). Then is the mean height (17 cm) calculated from the sample unexpectedly large?
+The hypothesis test works by asking the question how <emphasis>unlikely</emphasis> the sample mean would
+be if the null hypothesis were true. The graph shows how far out the sample mean is on
+the normal curve. The p-value is the probability that, if we were to take other samples, any
+other sample mean would fall at least as far out as 17 cm.</para><para id="element-537"><emphasis>The p-value, then, is the probability that a sample mean is the same or greater than 17 cm. when the population mean is, in fact, 15 cm.</emphasis> We can calculate this probability using the normal distribution for means from Chapter 7. </para><para id="element-246"><media id="id9446267" alt="Normal distribution curve on average bread heights with values 15, as the population mean, and 17, as the point to determine the p-value, on the x-axis."><image src="../../media/hyptest11_samphyp1.png" mime-type="image/png" print-width="3in"/></media></para><para id="element-328"><m:math><m:mtext>p-value</m:mtext><m:mo>=</m:mo><m:mi>P</m:mi><m:mo>(</m:mo><m:apply><m:conjugate/><m:mi>x</m:mi></m:apply><m:mo>&gt;</m:mo><m:mn>17</m:mn><m:mo>)</m:mo></m:math> which is approximately 0.</para><para id="element-710">A p-value of approximately 0 tells us that it is highly unlikely that a loaf of bread rises no
+more than 15 cm, on the average. That is, almost 0% of all loaves of bread would be at
+least as high as 17 cm. <emphasis>purely by CHANCE</emphasis> had the population mean height really been 15 cm.  Because the outcome of 17 cm. is so
+<emphasis>unlikely (meaning it is happening NOT by chance alone)</emphasis>, we conclude
+that the evidence is strongly against the null hypothesis (the mean height is at most 15
+cm.). There is sufficient evidence that the true mean height for the population of the
+baker's loaves of bread is greater than 15 cm.</para></example>   
+  </content>
+
+
+  <glossary>
+ <definition id="hypothesis">
+    <term>Hypothesis</term>
+    <meaning id="id1168218799446">
+   A statement about the value of a population parameter. In case of two hypotheses, the statement assumed to be true is called the null hypothesis (notation 
+<m:math><m:semantics><m:mrow><m:mstyle fontsize="12pt"><m:mrow><m:msub><m:mi>H</m:mi><m:mstyle fontsize="8pt"><m:mrow><m:mn>0</m:mn></m:mrow></m:mstyle></m:msub></m:mrow></m:mstyle><m:mrow/></m:mrow><m:annotation encoding="StarMath 5.0"> size 12{H rSub { size 8{0} } } {}</m:annotation></m:semantics></m:math>) and the contradictory statement is called the alternate hypothesis (notation 
+<m:math><m:semantics><m:mrow><m:mstyle fontsize="12pt"><m:mrow><m:msub><m:mi>H</m:mi><m:mstyle fontsize="8pt"><m:mrow><m:mi>a</m:mi></m:mrow></m:mstyle></m:msub></m:mrow></m:mstyle><m:mrow/></m:mrow><m:annotation encoding="StarMath 5.0"> size 12{H rSub { size 8{a} } } {}</m:annotation></m:semantics></m:math>).
+    </meaning>
+  </definition>
+
+
+<definition id="pvalue">
+    <term>p-value</term>
+    <meaning id="id9446562">
+The probability that an event will happen purely by chance assuming the null hypothesis is true. The smaller the p-value, the stronger the evidence is against the null hypothesis.
+    </meaning>
+  </definition>
+
+<definition id="stddev">
+    <term>Standard Deviation</term>
+    <meaning id="id20302532">
+A number that is equal to the square root of the variance and measures how far data values are from their mean. Notation: s for sample standard deviation and   <m:math><m:ci>σ</m:ci></m:math> for population standard deviation.
+    </meaning>
+  </definition>
+
+
+
+
+</glossary>
+</document>

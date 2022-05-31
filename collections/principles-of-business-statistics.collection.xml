@@ -1,0 +1,77 @@
+<col:collection xmlns="http://cnx.rice.edu/collxml" xmlns:md="http://cnx.rice.edu/mdml" xmlns:col="http://cnx.rice.edu/collxml" xml:lang="en">
+  <metadata xmlns:md="http://cnx.rice.edu/mdml" mdml-version="0.5">
+    <md:content-id>col10874</md:content-id>
+    <md:title>Principles of Business Statistics</md:title>
+    <md:language>en</md:language>
+    <md:license url="http://creativecommons.org/licenses/by/3.0/">Creative Commons Attribution License</md:license>
+    <md:uuid>733d1554-5d75-4798-9e54-7dcdc1ee5690</md:uuid>
+<md:slug>principles-of-business-statistics</md:slug>
+</metadata>
+  <col:content>
+    <col:subcollection>
+      <md:title>Sampling and Data</md:title>
+      <col:content>
+        <col:module document="m16008"/>
+        <col:module document="m16020"/>
+        <col:module document="m16007"/>
+        <col:module document="m16005"/>
+        <col:module document="m16021"/>
+        <col:module document="m16012"/>
+      </col:content>
+    </col:subcollection>
+    <col:subcollection>
+      <md:title>Descriptive Statistics</md:title>
+      <col:content>
+        <col:module document="m16300"/>
+        <col:module document="m16297"/>
+        <col:module document="m16298"/>
+        <col:module document="m17102"/>
+        <col:module document="m17104"/>
+        <col:module document="m17103"/>
+      </col:content>
+    </col:subcollection>
+    <col:subcollection>
+      <md:title>The Normal Distribution</md:title>
+      <col:content>
+        <col:module document="m16979"/>
+        <col:module document="m16986"/>
+        <col:module document="m16991"/>
+        <col:module document="m16976"/>
+        <col:module document="m16977"/>
+        <col:module document="m16947"/>
+        <col:module document="m16958"/>
+      </col:content>
+    </col:subcollection>
+    <col:subcollection>
+      <md:title>Confidence Interval</md:title>
+      <col:content>
+        <col:module document="m16967"/>
+        <col:module document="m16962"/>
+        <col:module document="m16959"/>
+        <col:module document="m16963"/>
+      </col:content>
+    </col:subcollection>
+    <col:subcollection>
+      <md:title>Hypothesis Testing</md:title>
+      <col:content>
+        <col:module document="m16997"/>
+        <col:module document="m16998"/>
+        <col:module document="m16995"/>
+        <col:module document="m16992"/>
+      </col:content>
+    </col:subcollection>
+    <col:subcollection>
+      <md:title>Linear Regression and Correlation</md:title>
+      <col:content>
+        <col:module document="m17089"/>
+        <col:module document="m17086"/>
+        <col:module document="m17083"/>
+        <col:module document="m17082"/>
+        <col:module document="m17090"/>
+        <col:module document="m17092"/>
+        <col:module document="m17077"/>
+        <col:module document="m17095"/>
+      </col:content>
+    </col:subcollection>
+  </col:content>
+</col:collection>

@@ -1,0 +1,146 @@
+<document xmlns="http://cnx.rice.edu/cnxml" xmlns:m="http://www.w3.org/1998/Math/MathML">
+  <title>Hypothesis Testing of Single Mean and Single Proportion: Null and Alternate Hypotheses</title>
+  <metadata xmlns:md="http://cnx.rice.edu/mdml">
+  <md:content-id>m16998</md:content-id>
+  <md:title>Hypothesis Testing of Single Mean and Single Proportion: Null and Alternate Hypotheses</md:title>
+  <md:abstract/>
+  <md:uuid>95e0b011-dc2b-4d36-b759-262e80bb525e</md:uuid>
+</metadata>
+  <content>
+    <para id="delete_me">The actual test begins by considering two <term target-id="hypothesis">hypotheses</term>. They are called the <emphasis>null hypothesis</emphasis>
+and the <emphasis>alternate hypothesis</emphasis>. These hypotheses contain opposing viewpoints.</para><para id="element-619"><m:math>
+<m:msub>
+<m:mi>H</m:mi>
+<m:mi>o</m:mi>
+</m:msub>
+</m:math>: <emphasis>The null hypothesis:</emphasis> It is a statement about the population that will be assumed to be true 
+unless it can be shown to be incorrect beyond a reasonable doubt.</para><para id="element-320"><m:math>
+<m:msub>
+<m:mi>H</m:mi>
+<m:mi>a</m:mi>
+</m:msub>
+</m:math>: <emphasis>The alternate hypothesis:</emphasis> It is a claim about the population that is
+contradictory to <m:math><m:msub><m:mi>H</m:mi><m:mi>o</m:mi></m:msub></m:math> and what we conclude when we reject <m:math><m:msub><m:mi>H</m:mi><m:mi>o</m:mi></m:msub></m:math>.</para><example id="element-183"><para id="element-283"><emphasis><m:math><m:msub><m:mi>H</m:mi><m:mi>o</m:mi></m:msub></m:math></emphasis>: No more than 30% of the registered voters in Santa Clara County voted in the primary
+election.
+</para><para id="element-160"><emphasis><m:math>
+<m:msub>
+<m:mi>H</m:mi>
+<m:mi>a</m:mi>
+</m:msub>
+</m:math></emphasis>: More than 30% of the registered voters in Santa Clara County voted in the primary
+election.</para>
+</example><example id="element-641"><para id="element-508">We want to test whether the mean grade point average in American
+colleges is different from 2.0 (out of 4.0).
+</para><para id="element-671"><m:math>
+<m:msub>
+<m:mi>H</m:mi>
+<m:mi>o</m:mi>
+</m:msub>
+</m:math>:
+<m:math><m:mi>μ</m:mi>
+<m:mo>=</m:mo>
+<m:mn>2.0</m:mn>
+<m:mspace width="20pt"/></m:math>
+<m:math>
+<m:msub><m:mi>H</m:mi><m:mi>a</m:mi></m:msub>
+</m:math>:
+<m:math>
+<m:mi>μ</m:mi>
+<m:mo>≠</m:mo>
+<m:mn>2.0</m:mn>
+</m:math></para>
+</example><example id="element-296"><para id="element-114">We want to test if college students take less than five years to graduate from
+college, on the average.
+</para><para id="element-493"><m:math><m:msub><m:mi>H</m:mi><m:mi>o</m:mi></m:msub></m:math>:
+<m:math>
+<m:mi>μ</m:mi>
+<m:mo>≥</m:mo>
+<m:mn>5</m:mn>
+<m:mspace width="20pt"/>
+</m:math>
+<m:math>
+<m:msub>
+<m:mi>H</m:mi>
+<m:mi>a</m:mi>
+</m:msub></m:math>:
+<m:math>
+<m:reln><m:lt/>
+<m:mrow>
+<m:mi>μ</m:mi>
+</m:mrow>
+<m:mrow>
+<m:mn>5</m:mn>
+</m:mrow>
+</m:reln>
+</m:math></para>
+</example><example id="element-410"><para id="element-86">In an issue of <emphasis>U. S. News and World Report</emphasis>, an article on school standards
+stated that about half of all students in France, Germany, and Israel take advanced placement
+exams and a third pass. The same article stated that 6.6% of U. S. students take advanced
+placement exams and 4.4 % pass. Test if the percentage of U. S. students who take advanced
+placement exams is more than 6.6%.
+</para><para id="element-807"><m:math><m:msub><m:mi>H</m:mi><m:mi>o</m:mi></m:msub></m:math>:
+<m:math><m:mi>p</m:mi></m:math><m:math><m:mo>=</m:mo><m:mn>0.066</m:mn><m:mspace width="20pt"/></m:math>
+<m:math>
+<m:msub>
+<m:mi>H</m:mi>
+<m:mi>a</m:mi>
+</m:msub>
+</m:math>:
+<m:math><m:mi>p</m:mi></m:math>
+<m:math>
+<m:mo>&gt;</m:mo>
+<m:mn>0.066</m:mn>
+</m:math>
+</para>
+</example><para id="element-478">Since the null and alternate hypotheses are contradictory, you must examine evidence to decide if you have enough evidence to reject the null hypothesis or not. The evidence is in the form of sample data.</para><para id="element-862">After you have determined which hypothesis the sample supports, you make a <emphasis>decision.</emphasis>
+There are two options for a decision. They are "reject <m:math><m:msub><m:mi>H</m:mi><m:mi>o</m:mi></m:msub></m:math>" if the sample information favors
+the alternate hypothesis or "do not reject <m:math><m:msub><m:mi>H</m:mi><m:mi>o</m:mi></m:msub></m:math>" or "fail to reject <m:math><m:msub><m:mi>H</m:mi><m:mi>o</m:mi></m:msub></m:math>" if the sample information is insufficient to reject the null hypothesis.
+
+</para><para id="element-689">Mathematical Symbols Used in <m:math><m:msub><m:mi>H</m:mi><m:mi>o</m:mi></m:msub></m:math> and <m:math><m:msub><m:mi>H</m:mi><m:mi>a</m:mi></m:msub></m:math>:
+
+<table id="element-341" frame="none" summary="Table presenting mathematical symbols used with the null and alternate hypothesis. The first column contains the null hypothesis and its 3 mathematical symbols and the second column has the alternate hypothesis and its mathematical symbols.">
+
+<tgroup cols="2"><thead valign="middle">
+  <row>
+    <entry align="center"><m:math><m:msub><m:mi>H</m:mi><m:mi>o</m:mi></m:msub></m:math></entry>
+    <entry align="center"><m:math><m:msub><m:mi>H</m:mi><m:mi>a</m:mi></m:msub></m:math></entry>
+  </row>
+</thead>
+<tbody>
+  <row>
+    <entry>equal (<m:math><m:mo>=</m:mo></m:math>)</entry>
+    <entry>not equal (<m:math><m:mo>≠</m:mo></m:math>) <emphasis>or</emphasis> greater than (<m:math><m:mo>&gt;</m:mo></m:math>) <emphasis>or</emphasis> less than (<m:math><m:reln><m:lt/></m:reln></m:math>)</entry>
+  </row>
+  <row>
+    <entry>greater than or equal to (<m:math><m:mo>≥</m:mo></m:math>)</entry>
+    <entry>less than (<m:math><m:reln><m:lt/></m:reln></m:math>)</entry>
+  </row>
+  <row>
+    <entry>less than or equal to (<m:math><m:mo>≤</m:mo></m:math>)</entry>
+    <entry>more than (<m:math><m:mo>&gt;</m:mo></m:math>)</entry>
+  </row>
+</tbody>
+
+
+</tgroup>
+</table></para><note id="id1168218302693"><m:math><m:msub><m:mi>H</m:mi><m:mi>o</m:mi></m:msub></m:math> always has a symbol with an equal in it. <m:math><m:msub><m:mi>H</m:mi><m:mi>a</m:mi></m:msub></m:math> never has a symbol with an equal in it. The choice of symbol depends on the wording of the hypothesis test.
+
+However, be aware that many researchers (including one of the co-authors in research work) use <m:math><m:mo>=</m:mo></m:math> in the Null Hypothesis, even with <m:math><m:mo>&gt;</m:mo></m:math> or <m:math><m:mo>&lt;</m:mo></m:math> as the
+symbol in the Alternate Hypothesis. This practice is acceptable because we only make the decision to reject or not reject the Null Hypothesis.
+ </note><section id="element-145"><title>Optional Collaborative Classroom Activity</title><para id="element-171">
+Bring to class a newspaper, some news magazines, and some Internet articles . In groups, find
+articles from which your group can write a null and alternate hypotheses. Discuss your
+hypotheses with the rest of the class.
+</para></section>   
+  </content>
+  <glossary>
+ <definition id="hypothesis">
+    <term>Hypothesis</term>
+    <meaning id="id1168218799446">
+   A statement about the value of a population parameter. In case of two hypotheses, the statement assumed to be true is called the null hypothesis (notation 
+<m:math><m:semantics><m:mrow><m:mstyle fontsize="12pt"><m:mrow><m:msub><m:mi>H</m:mi><m:mstyle fontsize="8pt"><m:mrow><m:mn>0</m:mn></m:mrow></m:mstyle></m:msub></m:mrow></m:mstyle><m:mrow/></m:mrow><m:annotation encoding="StarMath 5.0"> size 12{H rSub { size 8{0} } } {}</m:annotation></m:semantics></m:math>) and the contradictory statement is called the alternate hypothesis (notation 
+<m:math><m:semantics><m:mrow><m:mstyle fontsize="12pt"><m:mrow><m:msub><m:mi>H</m:mi><m:mstyle fontsize="8pt"><m:mrow><m:mi>a</m:mi></m:mrow></m:mstyle></m:msub></m:mrow></m:mstyle><m:mrow/></m:mrow><m:annotation encoding="StarMath 5.0"> size 12{H rSub { size 8{a} } } {}</m:annotation></m:semantics></m:math>).
+    </meaning>
+  </definition>
+</glossary>
+</document>
