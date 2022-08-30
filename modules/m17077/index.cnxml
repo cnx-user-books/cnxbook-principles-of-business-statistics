@@ -67,7 +67,7 @@ There IS A SIGNIFICANT LINEAR RELATIONSHIP (correlation) between <m:math><m:mi>x
 <item>Conclusion: "There is insufficient evidence to conclude that there is a significant linear relationship  between <m:math><m:mi>x</m:mi></m:math> and <m:math><m:mi>y</m:mi></m:math> because the correlation coefficient is NOT significantly different from 0."</item>
 </list><list id="eip-335" list-type="labeled-item"><title>Calculation Notes:</title><item> You will use technology to calculate the p-value.  The following describe the calculations to compute the test statistics and the p-value:</item><item>The p-value is calculated using a 
 <m:math><m:mi>t</m:mi></m:math>-distribution with <m:math><m:mi>n-2</m:mi></m:math> degrees of freedom.</item>
-<item>  The formula for the test statistic is <m:math display="display">
+<item>  The formula for the test statistic is <m:math>
   <m:apply>
     <m:eq/>
     <m:ci>t</m:ci>
